@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5C478B16B48300004166F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5C478A16B48300004166F8 /* UIKit.framework */; };
+		0C5C478D16B48300004166F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5C478C16B48300004166F8 /* Foundation.framework */; };
+		0C5C478F16B48300004166F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5C478E16B48300004166F8 /* CoreGraphics.framework */; };
+		0C5C479516B48300004166F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C479316B48300004166F8 /* InfoPlist.strings */; };
+		0C5C479716B48300004166F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C479616B48300004166F8 /* main.m */; };
+		0C5C479B16B48300004166F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C479A16B48300004166F8 /* AppDelegate.m */; };
+		0C5C479D16B48300004166F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C479C16B48300004166F8 /* Default.png */; };
+		0C5C479F16B48300004166F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C479E16B48300004166F8 /* Default@2x.png */; };
+		0C5C47A116B48300004166F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C47A016B48300004166F8 /* Default-568h@2x.png */; };
+		0C5C47A416B48300004166F8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C47A216B48300004166F8 /* MainStoryboard_iPhone.storyboard */; };
+		0C5C47A716B48300004166F8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C47A516B48300004166F8 /* MainStoryboard_iPad.storyboard */; };
+		0C5C47AA16B48300004166F8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C47A916B48300004166F8 /* ViewController.mm */; };
+		0CB01AEE16BF5B7300D790B6 /* Obstacle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CB01AEC16BF5B7300D790B6 /* Obstacle.cpp */; };
+		0CF930EB16B49599000DA3A8 /* Vehicle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CF930E916B49599000DA3A8 /* Vehicle.mm */; };
+		0CF930F016B496A5000DA3A8 /* Vector2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF930EE16B496A5000DA3A8 /* Vector2d.cpp */; };
+		0CF930F316B49C1B000DA3A8 /* SteeringBehaviors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF930F216B49C1B000DA3A8 /* SteeringBehaviors.cpp */; };
+		0CF930FC16B59F3C000DA3A8 /* GameWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CF930FA16B59F3C000DA3A8 /* GameWorld.mm */; };
+		0CF930FF16B64362000DA3A8 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CF930FE16B64362000DA3A8 /* GameView.mm */; };
+		0CF9310116B77D5B000DA3A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF9310016B77D5A000DA3A8 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C5C478616B48300004166F8 /* AIMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5C478A16B48300004166F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C5C478C16B48300004166F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C5C478E16B48300004166F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C5C479216B48300004166F8 /* AIMO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AIMO-Info.plist"; sourceTree = "<group>"; };
+		0C5C479416B48300004166F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C5C479616B48300004166F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C5C479816B48300004166F8 /* AIMO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AIMO-Prefix.pch"; sourceTree = "<group>"; };
+		0C5C479916B48300004166F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C5C479A16B48300004166F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C5C479C16B48300004166F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0C5C479E16B48300004166F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0C5C47A016B48300004166F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0C5C47A316B48300004166F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0C5C47A616B48300004166F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0C5C47A816B48300004166F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C5C47A916B48300004166F8 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		0CB01AEC16BF5B7300D790B6 /* Obstacle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Obstacle.cpp; sourceTree = "<group>"; };
+		0CB01AED16BF5B7300D790B6 /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obstacle.h; sourceTree = "<group>"; };
+		0CF930E916B49599000DA3A8 /* Vehicle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Vehicle.mm; sourceTree = "<group>"; };
+		0CF930EA16B49599000DA3A8 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		0CF930EC16B495CE000DA3A8 /* MovingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingEntity.h; sourceTree = "<group>"; };
+		0CF930ED16B49609000DA3A8 /* BaseGameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameEntity.h; sourceTree = "<group>"; };
+		0CF930EE16B496A5000DA3A8 /* Vector2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2d.cpp; sourceTree = "<group>"; };
+		0CF930EF16B496A5000DA3A8 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		0CF930F116B49C1B000DA3A8 /* SteeringBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringBehaviors.h; sourceTree = "<group>"; };
+		0CF930F216B49C1B000DA3A8 /* SteeringBehaviors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SteeringBehaviors.cpp; sourceTree = "<group>"; };
+		0CF930F416B49C3B000DA3A8 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		0CF930F516B4ADC4000DA3A8 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		0CF930FA16B59F3C000DA3A8 /* GameWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameWorld.mm; sourceTree = "<group>"; };
+		0CF930FB16B59F3C000DA3A8 /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		0CF930FD16B64362000DA3A8 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		0CF930FE16B64362000DA3A8 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		0CF9310016B77D5A000DA3A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0CF9310616BB993C000DA3A8 /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
+		0CF9310716BB99AF000DA3A8 /* C2DMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2DMatrix.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C5C478316B48300004166F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF9310116B77D5B000DA3A8 /* QuartzCore.framework in Frameworks */,
+				0C5C478B16B48300004166F8 /* UIKit.framework in Frameworks */,
+				0C5C478D16B48300004166F8 /* Foundation.framework in Frameworks */,
+				0C5C478F16B48300004166F8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C5C477B16B48300004166F8 = {
+			isa = PBXGroup;
+			children = (
+				0CF930F616B4AE7F000DA3A8 /* misc */,
+				0CF930AC16B48775000DA3A8 /* Common */,
+				0C5C47B116B4840D004166F8 /* AI */,
+				0C5C479016B48300004166F8 /* AIMO */,
+				0C5C478916B48300004166F8 /* Frameworks */,
+				0C5C478716B48300004166F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C5C478716B48300004166F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C478616B48300004166F8 /* AIMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C5C478916B48300004166F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF9310016B77D5A000DA3A8 /* QuartzCore.framework */,
+				0C5C478A16B48300004166F8 /* UIKit.framework */,
+				0C5C478C16B48300004166F8 /* Foundation.framework */,
+				0C5C478E16B48300004166F8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C5C479016B48300004166F8 /* AIMO */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C479916B48300004166F8 /* AppDelegate.h */,
+				0C5C479A16B48300004166F8 /* AppDelegate.m */,
+				0C5C47A216B48300004166F8 /* MainStoryboard_iPhone.storyboard */,
+				0C5C47A516B48300004166F8 /* MainStoryboard_iPad.storyboard */,
+				0C5C47A816B48300004166F8 /* ViewController.h */,
+				0C5C47A916B48300004166F8 /* ViewController.mm */,
+				0CF930FD16B64362000DA3A8 /* GameView.h */,
+				0CF930FE16B64362000DA3A8 /* GameView.mm */,
+				0C5C479116B48300004166F8 /* Supporting Files */,
+			);
+			path = AIMO;
+			sourceTree = "<group>";
+		};
+		0C5C479116B48300004166F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C5C479216B48300004166F8 /* AIMO-Info.plist */,
+				0C5C479316B48300004166F8 /* InfoPlist.strings */,
+				0C5C479616B48300004166F8 /* main.m */,
+				0C5C479816B48300004166F8 /* AIMO-Prefix.pch */,
+				0C5C479C16B48300004166F8 /* Default.png */,
+				0C5C479E16B48300004166F8 /* Default@2x.png */,
+				0C5C47A016B48300004166F8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C5C47B116B4840D004166F8 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				0CF930F116B49C1B000DA3A8 /* SteeringBehaviors.h */,
+				0CF930F216B49C1B000DA3A8 /* SteeringBehaviors.cpp */,
+				0CF930F416B49C3B000DA3A8 /* constants.h */,
+				0CF930ED16B49609000DA3A8 /* BaseGameEntity.h */,
+				0CF930EC16B495CE000DA3A8 /* MovingEntity.h */,
+				0CF930EA16B49599000DA3A8 /* Vehicle.h */,
+				0CF930E916B49599000DA3A8 /* Vehicle.mm */,
+				0CB01AEC16BF5B7300D790B6 /* Obstacle.cpp */,
+				0CB01AED16BF5B7300D790B6 /* Obstacle.h */,
+				0CF930FB16B59F3C000DA3A8 /* GameWorld.h */,
+				0CF930FA16B59F3C000DA3A8 /* GameWorld.mm */,
+			);
+			name = AI;
+			sourceTree = "<group>";
+		};
+		0CF930AC16B48775000DA3A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0CF930EF16B496A5000DA3A8 /* Vector2D.h */,
+				0CF930EE16B496A5000DA3A8 /* Vector2d.cpp */,
+				0CF9310716BB99AF000DA3A8 /* C2DMatrix.h */,
+				0CF9310616BB993C000DA3A8 /* Transformations.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		0CF930F616B4AE7F000DA3A8 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				0CF930F516B4ADC4000DA3A8 /* utils.h */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C5C478516B48300004166F8 /* AIMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5C47AD16B48300004166F8 /* Build configuration list for PBXNativeTarget "AIMO" */;
+			buildPhases = (
+				0C5C478216B48300004166F8 /* Sources */,
+				0C5C478316B48300004166F8 /* Frameworks */,
+				0C5C478416B48300004166F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIMO;
+			productName = AIMO;
+			productReference = 0C5C478616B48300004166F8 /* AIMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C5C477D16B48300004166F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0C5C478016B48300004166F8 /* Build configuration list for PBXProject "AIMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C5C477B16B48300004166F8;
+			productRefGroup = 0C5C478716B48300004166F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C5C478516B48300004166F8 /* AIMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C5C478416B48300004166F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5C479516B48300004166F8 /* InfoPlist.strings in Resources */,
+				0C5C479D16B48300004166F8 /* Default.png in Resources */,
+				0C5C479F16B48300004166F8 /* Default@2x.png in Resources */,
+				0C5C47A116B48300004166F8 /* Default-568h@2x.png in Resources */,
+				0C5C47A416B48300004166F8 /* MainStoryboard_iPhone.storyboard in Resources */,
+				0C5C47A716B48300004166F8 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C5C478216B48300004166F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5C479716B48300004166F8 /* main.m in Sources */,
+				0C5C479B16B48300004166F8 /* AppDelegate.m in Sources */,
+				0C5C47AA16B48300004166F8 /* ViewController.mm in Sources */,
+				0CF930EB16B49599000DA3A8 /* Vehicle.mm in Sources */,
+				0CF930F016B496A5000DA3A8 /* Vector2d.cpp in Sources */,
+				0CF930F316B49C1B000DA3A8 /* SteeringBehaviors.cpp in Sources */,
+				0CF930FC16B59F3C000DA3A8 /* GameWorld.mm in Sources */,
+				0CF930FF16B64362000DA3A8 /* GameView.mm in Sources */,
+				0CB01AEE16BF5B7300D790B6 /* Obstacle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C5C479316B48300004166F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C5C479416B48300004166F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C5C47A216B48300004166F8 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C5C47A316B48300004166F8 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0C5C47A516B48300004166F8 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C5C47A616B48300004166F8 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C5C47AB16B48300004166F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C5C47AC16B48300004166F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C5C47AE16B48300004166F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AIMO/AIMO-Prefix.pch";
+				INFOPLIST_FILE = "AIMO/AIMO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C5C47AF16B48300004166F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AIMO/AIMO-Prefix.pch";
+				INFOPLIST_FILE = "AIMO/AIMO-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C5C478016B48300004166F8 /* Build configuration list for PBXProject "AIMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5C47AB16B48300004166F8 /* Debug */,
+				0C5C47AC16B48300004166F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C5C47AD16B48300004166F8 /* Build configuration list for PBXNativeTarget "AIMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5C47AE16B48300004166F8 /* Debug */,
+				0C5C47AF16B48300004166F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C5C477D16B48300004166F8 /* Project object */;
+}
